@@ -12,6 +12,8 @@
 		8E302CE822912F76008C23D6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E302CE622912F76008C23D6 /* Main.storyboard */; };
 		8E302CEA22912F79008C23D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E302CE922912F79008C23D6 /* Assets.xcassets */; };
 		8E302CED22912F79008C23D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E302CEB22912F79008C23D6 /* LaunchScreen.storyboard */; };
+		8E302CF52291351B008C23D6 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E302CF42291351B008C23D6 /* TopViewController.swift */; };
+		8E302CF722919BBD008C23D6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E302CF622919BBD008C23D6 /* SecondViewController.swift */; };
 		B2F7C0A09A9A6A3EFF0143CE /* Pods_SnapKitTrial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6590929E932BC7EA98CDAA4C /* Pods_SnapKitTrial.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +27,8 @@
 		8E302CE922912F79008C23D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E302CEC22912F79008C23D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E302CEE22912F79008C23D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E302CF42291351B008C23D6 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		8E302CF622919BBD008C23D6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		B034AD231D383F518FFB951C /* Pods-SnapKitTrial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapKitTrial.release.xcconfig"; path = "Target Support Files/Pods-SnapKitTrial/Pods-SnapKitTrial.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +50,6 @@
 				7FC08AAC7B039E49F60B69B7 /* Pods-SnapKitTrial.debug.xcconfig */,
 				B034AD231D383F518FFB951C /* Pods-SnapKitTrial.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,6 +80,8 @@
 				8E302CE922912F79008C23D6 /* Assets.xcassets */,
 				8E302CEB22912F79008C23D6 /* LaunchScreen.storyboard */,
 				8E302CEE22912F79008C23D6 /* Info.plist */,
+				8E302CF42291351B008C23D6 /* TopViewController.swift */,
+				8E302CF622919BBD008C23D6 /* SecondViewController.swift */,
 			);
 			path = SnapKitTrial;
 			sourceTree = "<group>";
@@ -209,6 +214,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E302CF722919BBD008C23D6 /* SecondViewController.swift in Sources */,
+				8E302CF52291351B008C23D6 /* TopViewController.swift in Sources */,
 				8E302CE522912F76008C23D6 /* ViewController.swift in Sources */,
 				8E302CE322912F76008C23D6 /* AppDelegate.swift in Sources */,
 			);
