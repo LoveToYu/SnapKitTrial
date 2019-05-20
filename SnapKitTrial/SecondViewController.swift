@@ -28,6 +28,38 @@ class SecondViewController: UIViewController {
         button.addTarget(self, action: #selector(buttonDidTap(_:)), for: .touchUpInside)
         return button
     }()
+    
+    let topLeft: UILabel = {
+        let label = UILabel()
+        label.text = "Top Left"
+        label.backgroundColor = UIColor.green
+        label.textAlignment = NSTextAlignment.center
+        return label
+    }()
+    
+    let topRight: UILabel = {
+        let label = UILabel()
+        label.text = "Top Right"
+        label.backgroundColor = UIColor.green
+        label.textAlignment = NSTextAlignment.center
+        return label
+    }()
+    
+    let bottomLeft: UILabel = {
+        let label = UILabel()
+        label.text = "Bottom Left"
+        label.backgroundColor = UIColor.green
+        label.textAlignment = NSTextAlignment.center
+        return label
+    }()
+    
+    let bottomRight: UILabel = {
+        let label = UILabel()
+        label.text = "Bottom Right"
+        label.backgroundColor = UIColor.green
+        label.textAlignment = NSTextAlignment.center
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +83,32 @@ class SecondViewController: UIViewController {
             make.top.equalTo(self.label.snp.bottom).offset(10) // top = button.buttom + 10
             make.width.equalTo(100)
             make.height.equalTo(50)
+        }
+        
+        self.view.addSubview(topLeft)
+        self.view.addSubview(topRight)
+        self.view.addSubview(bottomLeft)
+        self.view.addSubview(bottomRight)
+        
+        // TopLeft
+        self.topLeft.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.equalToSuperview()
+        }
+        // TopRight
+        self.topRight.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.right.equalToSuperview()
+        }
+        // BottomLeft
+        self.bottomLeft.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.left.equalToSuperview()
+        }
+        // BottomRight
+        self.bottomRight.snp.makeConstraints { make in
+            make.bottom.equalToSuperview()
+            make.right.equalToSuperview()
         }
     }
     

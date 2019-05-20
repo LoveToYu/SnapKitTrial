@@ -57,6 +57,6 @@ class TopViewController: UIViewController {
     @objc func buttonDidTap(_ sender: UIButton) {
         let secondViewController = SecondViewController()
         self.present(secondViewController, animated: true, completion: nil)
-    }github
+    }
 
 }
